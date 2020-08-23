@@ -2,6 +2,46 @@ export default (editor, opts = {}) => {
   const plugin = editor.BlockManager.add; // Alias for convenience.
 
 
+  /* Spectre Layout *********************************************************/
+
+
+  plugin('spectre_layout_hero', {
+    label: 'Hero',
+    content: `
+    <div class="hero hero-sm bg-gray">
+      <div class="hero-body">
+        <h1>Hero</h1>
+        <p>Hero example</p>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Layout',
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+  });
+
+  plugin('spectre_layout_navbar', {
+    label: 'Navbar',
+    content: `
+    <header class="navbar bg-grey">
+      <section class="navbar-section">
+        <a href="#" class="navbar-brand mr-2">Spectre</a>
+        <a href="#" class="btn btn-link">Nim</a>
+      </section>
+      <section class="navbar-center">
+      <!-- centered logo or brand -->
+      <img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">
+      </section>
+      <section class="navbar-section">
+        <div class="input-group input-inline">
+          <input class="form-input" type="search" placeholder="Search..." required >
+          <button class="btn btn-primary input-group-btn" onclick="">Search</button>
+        </div>
+      </section>
+    </header>`,
+    category: 'Spectre➡️Layout',
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+  });
+
+
   /* Spectre Code *********************************************************/
 
 
