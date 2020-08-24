@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="EN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Spectre CSS HTML Designer</title>
@@ -7,11 +7,22 @@
     <script src="https://unpkg.com/grapesjs"></script>
     <script src="dist/grapespectre.min.js"></script>
     <style>
-      body,html{height:100%;margin:0}
-      .gjs-pn-btn.fa.fa-code{background:red}
+      body, html {height:100%; margin:0}
+      div.gjs-cm-editor-c { width: 99% }
+      div.gjs-cm-editor#gjs-cm-htmlmixed { border: 0 }
+      div.gjs-cm-editor#gjs-cm-css { display: none }
+      div.gjs-cm-editor#gjs-cm-htmlmixed {padding: 0}
+      @keyframes blink { from { opacity: 1 } to { opacity: 0 } }
+      span.gjs-pn-btn.fa.fa-code {
+        background: limegreen;
+        animation-iteration-count: 9;
+        animation-duration: 1s;
+        animation-name: blink;
+        animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+      }
     </style>
   </head>
-  <body>
+  <body lang="en">
     <script>
       window.editor = grapesjs.init({
         height:         '100%',
