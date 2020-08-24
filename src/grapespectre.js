@@ -15,8 +15,8 @@ export default (editor, opts = {}) => {
       </div>
     </div>`,
     category: 'Spectre➡️Layout',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
-    render: ({ el }) => {
+    media:    '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
       const a = document.createElement('a');
       a.target = '_blank';
       a.innerHTML = '?';
@@ -46,8 +46,8 @@ export default (editor, opts = {}) => {
       </section>
     </header>`,
     category: 'Spectre➡️Layout',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
-    render: ({ el }) => {
+    media:    '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
       const a = document.createElement('a');
       a.target = '_blank';
       a.innerHTML = '?';
