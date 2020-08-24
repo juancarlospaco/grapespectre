@@ -309,28 +309,28 @@ export default (editor, opts = {}) => {
     label: 'Ubuntu',
     content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">',
     category: 'Fonts',
-    media:    '<img src="https://www.gstatic.com/images/icons/material/apps/fonts/1x/opengraph_color_blue_1200dp.png" height=32 width=64 >'
+    media:    '<img src="google_fonts.jpg" height=32 width=64 >'
   });
 
   plugin('fonts_oxygen', {
     label: 'Oxygen',
     content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap">',
     category: 'Fonts',
-    media:    '<img src="https://www.gstatic.com/images/icons/material/apps/fonts/1x/opengraph_color_blue_1200dp.png" height=32 width=64 >'
+    media:    '<img src="google_fonts.jpg" height=32 width=64 >'
   });
 
   plugin('fonts_roboto', {
     label: 'Roboto',
     content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">',
     category: 'Fonts',
-    media:    '<img src="https://www.gstatic.com/images/icons/material/apps/fonts/1x/opengraph_color_blue_1200dp.png" height=32 width=64 >'
+    media:    '<img src="google_fonts.jpg" height=32 width=64 >'
   });
 
   plugin('fonts_lato', {
     label: 'Lato',
     content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">',
     category: 'Fonts',
-    media:    '<img src="https://www.gstatic.com/images/icons/material/apps/fonts/1x/opengraph_color_blue_1200dp.png" height=32 width=64 >'
+    media:    '<img src="google_fonts.jpg" height=32 width=64 >'
   });
 
 
