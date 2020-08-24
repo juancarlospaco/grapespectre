@@ -1,20 +1,19 @@
 {
-  "name": "grapesjs-spectrecss",
+  "name": "grapespectre",
   "version": "1.0.0",
-  "description": "spectrecss",
-  "main": "dist/grapesjs-spectrecss.min.js",
+  "description": "grapespectre",
+  "main": "dist/grapespectre.min.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juancarlospaco/grapesjs-spectrecss.git"
+    "url": "https://github.com/juancarlospaco/grapespectre.git"
   },
   "scripts": {
     "start": "grapesjs-cli serve",
-    "build": "grapesjs-cli build",
-    "bump": "npm version patch -m 'Bump v%s'"
+    "build": "grapesjs-cli build"
   },
   "keywords": [
     "grapesjs",
-    "plugin"
+    "spectrecss"
   ],
   "devDependencies": {
     "grapesjs-cli": "^1.0.12"

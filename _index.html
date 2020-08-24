@@ -3,23 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Spectre CSS HTML Designer</title>
-    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet" async defer >
     <script src="https://unpkg.com/grapesjs"></script>
     <style>body,html{height:100%;margin:0}</style>
   </head>
   <body>
-    <script type="text/javascript">
+    <script>
       window.editor = grapesjs.init({
-        height: '100%',
-        container: 'body',
-        showOffsets: true,
-        fromElement: true,
+        height:         '100%',
+        container:      'body',
+        showOffsets:    true,
+        fromElement:    true,
         noticeOnUnload: false,
         storageManager: false,
-        plugins: ['grapesjs-spectrecss'],
-        pluginsOpts: {
-          'grapesjs-spectrecss': { /* Test here your options  */ }
-        }
+        plugins:        ['grapespectre'],
       });
     </script>
   </body>

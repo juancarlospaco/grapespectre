@@ -1,4 +1,4 @@
-import loadBlocks from './spectrecss';
+import loadBlocks from './grapespectre';
 
 export default (editor, options = {}) => {
   loadBlocks(editor, options);
