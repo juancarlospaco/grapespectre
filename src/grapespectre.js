@@ -107,7 +107,7 @@ export default (editor, opts = {}) => {
   });
 
   plugin('nim_scf_comprehension', {
-    label: 'List/Table Comprehension',
+    label: 'List Comprehension',
     content: `
     #
     #let variable = collect(newSeq):
