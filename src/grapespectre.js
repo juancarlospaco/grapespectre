@@ -334,6 +334,38 @@ export default (editor, opts = {}) => {
   });
 
 
+  /* Unsplash images *********************************************************/
+
+
+  plugin('unsplash_images_random', {
+    label:    'Random',
+    content:  '<img src="https://source.unsplash.com/random" height="99" width="99">\n',
+    category: 'Unsplash➡️Images',
+    media:    '<img src="unsplash.svg" height=32 width=32 >'
+  });
+
+  plugin('unsplash_images_daily', {
+    label:    'Daily Best',
+    content:  '<img src="https://source.unsplash.com/daily" height="99" width="99">\n',
+    category: 'Unsplash➡️Images',
+    media:    '<img src="unsplash.svg" height=32 width=32 >'
+  });
+
+  plugin('unsplash_images_weekly', {
+    label:    'Weekly Best',
+    content:  '<img src="https://source.unsplash.com/weekly" height="99" width="99">\n',
+    category: 'Unsplash➡️Images',
+    media:    '<img src="unsplash.svg" height=32 width=32 >'
+  });
+
+  plugin('unsplash_images_featured', {
+    label:    'Featured Curated',
+    content:  '<img src="https://source.unsplash.com/featured" height="99" width="99">\n',
+    category: 'Unsplash➡️Images',
+    media:    '<img src="unsplash.svg" height=32 width=32 >'
+  });
+
+
   /* Spectre Layout *********************************************************/
 
 
