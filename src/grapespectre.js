@@ -15,7 +15,15 @@ export default (editor, opts = {}) => {
       </div>
     </div>`,
     category: 'Spectre➡️Layout',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/layout/hero.html';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_layout_navbar', {
@@ -38,7 +46,15 @@ export default (editor, opts = {}) => {
       </section>
     </header>`,
     category: 'Spectre➡️Layout',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/layout/navbar.html';
+      el.appendChild(a);
+    },
   });
 
 
@@ -49,7 +65,15 @@ export default (editor, opts = {}) => {
     label: 'Multiline',
     content: '<pre class="code" data-lang="Nim"><code>echo "Hello World"</code></pre>\n',
     category: 'Spectre➡️Code',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/code.html#code-snippet';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_code_textarea', {
@@ -96,7 +120,15 @@ export default (editor, opts = {}) => {
     </table>
     `,
     category: 'Spectre➡️Table',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/tables.html';
+      el.appendChild(a);
+    },
   });
 
 
@@ -133,7 +165,15 @@ export default (editor, opts = {}) => {
     </table>
     `,
     category: 'Spectre➡️Table',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/tables.html';
+      el.appendChild(a);
+    },
   });
 
 
@@ -148,7 +188,15 @@ export default (editor, opts = {}) => {
       <figcaption class="figure-caption text-center">Image Description</figcaption>
     </figure>`,
     category: 'Spectre➡️Media',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/media.html#media-images';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_media_image_crop', {
@@ -159,7 +207,15 @@ export default (editor, opts = {}) => {
       <figcaption class="figure-caption text-center">Image Description</figcaption>
     </figure>`,
     category: 'Spectre➡️Media',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/media.html#media-images';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_media_image_resize', {
@@ -170,7 +226,15 @@ export default (editor, opts = {}) => {
       <figcaption class="figure-caption text-center">Image Description</figcaption>
     </figure>`,
     category: 'Spectre➡️Media',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/media.html#media-images';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_media_video_169', {
@@ -181,7 +245,15 @@ export default (editor, opts = {}) => {
       <!-- <video src="video.webm" allowfullscreen >Video Not Supported</video> -->
     </div>`,
     category: 'Spectre➡️Media',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/media.html#media-video';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_media_video_43', {
@@ -192,7 +264,15 @@ export default (editor, opts = {}) => {
       <!-- <video src="video.webm" allowfullscreen >Video Not Supported</video> -->
     </div>`,
     category: 'Spectre➡️Media',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/media.html#media-video';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_media_video_11', {
@@ -203,7 +283,15 @@ export default (editor, opts = {}) => {
       <!-- <video src="video.webm" allowfullscreen >Video Not Supported</video> -->
     </div>`,
     category: 'Spectre➡️Media',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/media.html#media-video';
+      el.appendChild(a);
+    },
   });
 
 
@@ -214,42 +302,30 @@ export default (editor, opts = {}) => {
     label: 'Primary',
     content: '<span class="label label-rounded label-primary">primary</span>\n',
     category: 'Spectre➡️Labels',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/labels.html#labels-rounded';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_labels_secondary', {
     label: 'Secondary',
     content: '<span class="label label-rounded label-secondary">secondary</span>\n',
     category: 'Spectre➡️Labels',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_labels_success', {
-    label: 'Success',
-    content: '<span class="label label-rounded label-success">success</span>\n',
-    category: 'Spectre➡️Labels',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_labels_warning', {
-    label: 'Warning',
-    content: '<span class="label label-rounded label-warning">warning</span>\n',
-    category: 'Spectre➡️Labels',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_labels_error', {
-    label: 'Error',
-    content: '<span class="label label-rounded label-error">error</span>\n',
-    category: 'Spectre➡️Labels',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_labels_default', {
-    label: 'Default',
-    content: '<span class="label label-rounded">default</span>\n',
-    category: 'Spectre➡️Labels',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/labels.html#labels-rounded';
+      el.appendChild(a);
+    },
   });
 
 
@@ -266,7 +342,15 @@ export default (editor, opts = {}) => {
       text-ellipsis text-clip text-break
     "> Remove the classes you dont need! </div>`,
     category: 'Spectre➡️Utils',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/utilities/text.html#text';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_utils_position', {
@@ -276,7 +360,15 @@ export default (editor, opts = {}) => {
       float-left float-right p-relative p-absolute p-fixed p-sticky p-centered clearfix
     "> Remove the classes you dont need! </div>`,
     category: 'Spectre➡️Utils',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/utilities/position.html#position';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_utils_display', {
@@ -286,21 +378,45 @@ export default (editor, opts = {}) => {
       d-block d-inline d-inline-block d-flex d-inline-flex d-visible
     "> Remove the classes you dont need! </div>`,
     category: 'Spectre➡️Utils',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/utilities/display.html#display';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_utils_loading', {
     label: 'Loading Spinner',
     content: '<div class="loading loading-lg" title="Loading"></div>\n',
     category: 'Spectre➡️Utils',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/utilities/loading.html#loading';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_utils_divider', {
     label: 'Divider',
     content: '<div class="divider text-center" data-content="Divider Text"></div>\n',
     category: 'Spectre➡️Utils',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/utilities/divider.html#divider';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_utils_cursors', {
@@ -314,7 +430,15 @@ export default (editor, opts = {}) => {
       <div class="c-auto">Auto</div>
     `,
     category: 'Spectre➡️Utils',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/utilities/cursors.html#cursors';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_utils_background_colors', {
@@ -329,7 +453,15 @@ export default (editor, opts = {}) => {
       <div class="bg-error">error</div>
     `,
     category: 'Spectre➡️Utils',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/utilities/colors.html#colors-background';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_utils_text_colors', {
@@ -345,7 +477,15 @@ export default (editor, opts = {}) => {
       <span class="text-error">error</span>
     `,
     category: 'Spectre➡️Utils',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/utilities/colors.html#colors-text';
+      el.appendChild(a);
+    },
   });
 
 
@@ -377,21 +517,45 @@ export default (editor, opts = {}) => {
       ...
     </div>`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/timelines.html#timelines';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_slider', {
     label: 'Slider with Tooltip',
     content: `<input class="slider tooltip" type="range" min="0" max="100" value="50" step="1" oninput="this.setAttribute('value', this.value);">`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/sliders.html#sliders';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_progress', {
     label: 'Progress',
     content: `<progress class="progress" value="25" min="0" max="100"></progress>`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/progress.html#progress';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_parallax', {
@@ -413,14 +577,30 @@ export default (editor, opts = {}) => {
     </div>
     `,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/parallax.html#parallax';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_meter', {
     label: 'Meter',
     content: `<meter class="meter" value="20" title="20" optimum="90" min="0" max="100" low="30" high="80"></meter>`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/meters.html#meters';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_filter', {
@@ -448,7 +628,15 @@ export default (editor, opts = {}) => {
       </div>
     </div>`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/filters.html#filters';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_comparison_slider', {
@@ -467,7 +655,15 @@ export default (editor, opts = {}) => {
       </figure>
     </div>`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/comparison.html#comparison';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_carousel', {
@@ -513,7 +709,15 @@ export default (editor, opts = {}) => {
       </div>
     </div>`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/carousels.html#carousels';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_calendar', {
@@ -598,7 +802,15 @@ export default (editor, opts = {}) => {
       </div>
     </div>`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/calendars.html#calendars-sizes';
+      el.appendChild(a);
+    },
   });
 
   plugin('spectre_experimentals_360viewer', {
@@ -609,19 +821,20 @@ export default (editor, opts = {}) => {
       <figure class="viewer-image" style="background-image:url('...');"></figure>
     </div>`,
     category: 'Spectre➡️Experimentals',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/experimentals/viewer-360.html';
+      el.appendChild(a);
+    },
   });
 
 
   /* Spectre Buttons *********************************************************/
 
-
-  plugin('spectre_button_default', {
-    label: 'Default',
-    content: '<button class="btn" onclick="">default</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
 
   plugin('spectre_button_primary', {
     label: 'Primary',
@@ -630,30 +843,9 @@ export default (editor, opts = {}) => {
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
 
-  plugin('spectre_button_link', {
-    label: 'Link',
-    content: '<button class="btn btn-link" onclick="">link</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_success', {
-    label: 'Success',
-    content: '<button class="btn btn-success" onclick="">success</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_error', {
-    label: 'Error',
-    content: '<button class="btn btn-error" onclick="">Error</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_default_small', {
-    label: 'Default Small',
-    content: '<button class="btn btn-sm" onclick="">default</button>\n',
+  plugin('spectre_button_secondary', {
+    label: 'Secondary',
+    content: '<button class="btn btn-secondary" onclick="">secondary</button>\n',
     category: 'Spectre➡️Buttons',
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
@@ -665,30 +857,9 @@ export default (editor, opts = {}) => {
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
 
-  plugin('spectre_button_link_small', {
-    label: 'Link Small',
-    content: '<button class="btn btn-link btn-sm" onclick="">link</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_success_small', {
-    label: 'Success Small',
-    content: '<button class="btn btn-success btn-sm" onclick="">success</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_error_small', {
-    label: 'Error Small',
-    content: '<button class="btn btn-error btn-sm" onclick="">Error</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_default_large', {
-    label: 'Default Large',
-    content: '<button class="btn btn-lg" onclick="">default</button>\n',
+  plugin('spectre_button_secondary_small', {
+    label: 'Secondary Small',
+    content: '<button class="btn btn-secondary btn-sm" onclick="">secondary</button>\n',
     category: 'Spectre➡️Buttons',
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
@@ -700,30 +871,9 @@ export default (editor, opts = {}) => {
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
 
-  plugin('spectre_button_link_large', {
-    label: 'Link Large',
-    content: '<button class="btn btn-link btn-lg" onclick="">link</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_success_large', {
-    label: 'Success Large',
-    content: '<button class="btn btn-success btn-lg" onclick="">success</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_error_large', {
-    label: 'Error Large',
-    content: '<button class="btn btn-error btn-lg" onclick="">Error</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_hamburger_default', {
-    label: 'Hamburger Default',
-    content: '<button class="btn btn-action" onclick=""><i class="icon icon-menu"></i></button>\n',
+  plugin('spectre_button_secondary_large', {
+    label: 'Secondary Large',
+    content: '<button class="btn btn-secondary btn-lg" onclick="">secondary</button>\n',
     category: 'Spectre➡️Buttons',
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
@@ -735,20 +885,6 @@ export default (editor, opts = {}) => {
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
 
-  plugin('spectre_button_hamburger_success', {
-    label: 'Hamburger Success',
-    content: '<button class="btn btn-action btn-success" onclick=""><i class="icon icon-menu"></i></button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_hamburger_default_circle', {
-    label: 'Hamburger Default Circle',
-    content: '<button class="btn btn-action s-circle" onclick=""><i class="icon icon-menu"></i></button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
   plugin('spectre_button_hamburger_primary_circle', {
     label: 'Hamburger Primary Circle',
     content: '<button class="btn btn-action s-circle btn-primary" onclick=""><i class="icon icon-menu"></i></button>\n',
@@ -756,44 +892,9 @@ export default (editor, opts = {}) => {
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
 
-  plugin('spectre_button_hamburger_success_circle', {
-    label: 'Hamburger Success Circle',
-    content: '<button class="btn btn-action s-circle btn-success" onclick=""><i class="icon icon-menu"></i></button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_default_small_loading', {
-    label: 'Default Small Loading',
-    content: '<button class="btn btn-sm loading" onclick="">default</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
   plugin('spectre_button_primary_small_loading', {
-    label: 'Primary Small',
+    label: 'Loading Primary Small',
     content: '<button class="btn btn-primary btn-sm loading" onclick="">primary</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_link_small_loading', {
-    label: 'Link Small',
-    content: '<button class="btn btn-link btn-sm loading" onclick="">link</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_success_small_loading', {
-    label: 'Success Small',
-    content: '<button class="btn btn-success btn-sm loading" onclick="">success</button>\n',
-    category: 'Spectre➡️Buttons',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
-  });
-
-  plugin('spectre_button_error_small_loading', {
-    label: 'Error Small',
-    content: '<button class="btn btn-error btn-sm loading" onclick="">Error</button>\n',
     category: 'Spectre➡️Buttons',
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
