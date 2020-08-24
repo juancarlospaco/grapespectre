@@ -177,6 +177,40 @@ export default (editor, opts = {}) => {
   });
 
 
+  /* Spectre Labels *********************************************************/
+
+
+  plugin('spectre_labels_primary', {
+    label: 'Primary',
+    content: '<span class="label label-rounded label-primary">primary</span>\n',
+    category: 'Spectre➡️Labels',
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/labels.html#labels-rounded';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_labels_secondary', {
+    label: 'Secondary',
+    content: '<span class="label label-rounded label-secondary">secondary</span>\n',
+    category: 'Spectre➡️Labels',
+    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
+    render: ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/elements/labels.html#labels-rounded';
+      el.appendChild(a);
+    },
+  });
+
+
   /* Spectre Media *********************************************************/
 
 
@@ -290,40 +324,6 @@ export default (editor, opts = {}) => {
       a.innerHTML = '?';
       a.title = 'Docs';
       a.href = 'https://picturepan2.github.io/spectre/elements/media.html#media-video';
-      el.appendChild(a);
-    },
-  });
-
-
-  /* Spectre Labels *********************************************************/
-
-
-  plugin('spectre_labels_primary', {
-    label: 'Primary',
-    content: '<span class="label label-rounded label-primary">primary</span>\n',
-    category: 'Spectre➡️Labels',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
-    render: ({ el }) => {
-      const a = document.createElement('a');
-      a.target = '_blank';
-      a.innerHTML = '?';
-      a.title = 'Docs';
-      a.href = 'https://picturepan2.github.io/spectre/elements/labels.html#labels-rounded';
-      el.appendChild(a);
-    },
-  });
-
-  plugin('spectre_labels_secondary', {
-    label: 'Secondary',
-    content: '<span class="label label-rounded label-secondary">secondary</span>\n',
-    category: 'Spectre➡️Labels',
-    media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">',
-    render: ({ el }) => {
-      const a = document.createElement('a');
-      a.target = '_blank';
-      a.innerHTML = '?';
-      a.title = 'Docs';
-      a.href = 'https://picturepan2.github.io/spectre/elements/labels.html#labels-rounded';
       el.appendChild(a);
     },
   });
