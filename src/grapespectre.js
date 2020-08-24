@@ -1,6 +1,305 @@
 export default (editor, opts = {}) => {
   const plugin = editor.BlockManager.add; // Alias for convenience.
 
+  /* Nim-lang.org Source Code Filter *********************************************************/
+
+
+  plugin('nim_scf_header_basic', {
+    label: 'Header Basic',
+    content: '#? stdtmpl\n',
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/filters.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_header_full', {
+    label: 'Header Full',
+    content: `
+    #? stdtmpl | strip
+    #include prelude
+    #
+    #
+    #proc generateHTML*(argument: string): string =
+    #  discard
+    #end proc
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/filters.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_proc', {
+    label: 'Function',
+    content: `
+    #
+    #proc generateHTML*(argument: string): string =
+    #  discard
+    #end proc
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#procedures';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_template', {
+    label: 'Template',
+    content: `
+    #
+    #template generateHTML*(argument: string): string =
+    #  discard
+    #end template
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#templates';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_arrow_func', {
+    label: 'Arrow Functions',
+    content: `
+    #
+    #let name0 = (argument: int) {.inline.} => echo argument
+    #let name1 = (argument: bool) {.inline.} => echo argument
+    #let name2 = (argument: float) {.inline.} => echo argument
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://github.com/nim-lang/Nim/wiki/Nim-for-TypeScript-Programmers#arrow-functions';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_comprehension', {
+    label: 'List/Table Comprehension',
+    content: `
+    #
+    #let variable = collect(newSeq):
+    #  for item in @[-9, 1, 42, 0, -1, 9]: item
+    #
+    #let variable = collect(initTable(4)):
+    #  for key, value in @[-9, 1, 42, 0, -1, 9]: {key: value}
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://github.com/nim-lang/Nim/wiki/Nim-for-Python-Programmers#list-comprehensions';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_if', {
+    label: 'if...elif...else',
+    content: `
+    #
+    #if condition:
+      <br>
+    #elif condition:
+      <br>
+    #else:
+      <br>
+    #end if
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#statements-and-expressions-if-statement';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_for', {
+    label: 'for loop',
+    content: `
+    #
+    #for i in 0..9:
+    #  echo i
+    #end for
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#iterators-and-the-for-statement';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_case', {
+    label: 'case switch',
+    content: `
+    #
+    #case condition
+    #of value0:
+      <br>
+    #of value1:
+      <br>
+    #else:
+      <br>
+    #end case
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#statements-and-expressions-case-statement';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_while', {
+    label: 'while infinite loop',
+    content: `
+    #
+    #while true:
+      <br>
+    #end while
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#statements-and-expressions-while-statement';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_try', {
+    label: 'try...except...finally',
+    content: `
+    #
+    #try:
+      <br>
+    #except IOError as e:
+    #  echo e.msg
+    #except:
+      <br>
+    #finally:
+      <br>
+    #end try
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#exception-handling-try-statement';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_variables', {
+    label: 'variables declaration',
+    content: `
+    #
+    #const
+    #  constant_immutable0 = 0
+    #  constant_immutable1 = 42
+    #  constant_immutable2 = true
+    #let
+    #  variable_immutable0 = 666
+    #  variable_immutable1 = 3.14
+    #  variable_immutable2 = @[1, 2, 3]
+    #var
+    #  variable_mutable0: int
+    #  variable_mutable1: string
+    #  variable_mutable2: float
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#statements-and-expressions-var-statement';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('nim_scf_while', {
+    label: 'while infinite loop',
+    content: `
+    #
+    #while true:
+      <br>
+    #end while
+    #
+    `,
+    category: 'Nim lang➡️SCF',
+    media:    '<img src="https://nim-lang.org/assets/img/logo.svg" height=32 width=64 >',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://nim-lang.org/docs/manual.html#statements-and-expressions-while-statement';
+      el.appendChild(a);
+    },
+  });
+
 
   /* Spectre Layout *********************************************************/
 
@@ -1232,7 +1531,6 @@ export default (editor, opts = {}) => {
     category: 'Spectre➡️Icons',
     media: '<img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">'
   });
-
 
 
 }
