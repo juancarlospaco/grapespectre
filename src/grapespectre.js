@@ -366,6 +366,38 @@ export default (editor, opts = {}) => {
   });
 
 
+  /* SVG Patterns *********************************************************/
+
+
+  plugin('svg_patterns_gradient', {
+    label:    'Gradient',
+    content: `
+    <svg xmlns='http://www.w3.org/2000/svg' width='99' height='99'>
+      <linearGradient id='g' x2='1' y2='1'>
+      <stop stop-color='#F19'/>
+      <stop offset='100%' stop-color='#0CF'/>
+      </linearGradient>
+      <rect width='99' height='99' fill='url(#g)'/>
+    </svg>`,
+    category: 'SVG➡️Patterns',
+    media:    '<img src="svg.svg" height=32 width=32 >'
+  });
+
+  plugin('svg_patterns_noise', {
+    label:    'Perlin Noise',
+    content: `
+    <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='99' height='99'>
+      <filter id='n'>
+        <feTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='10' stitchTiles='stitch'/>
+      </filter>
+      <rect width='500' height='500' fill='#000'/>
+      <rect width='500' height='500' filter="url(#n)" opacity='0.4'/>
+    </svg>`,
+    category: 'SVG➡️Patterns',
+    media:    '<img src="svg.svg" height=32 width=32 >'
+  });
+
+
   /* Spectre Layout *********************************************************/
 
 
