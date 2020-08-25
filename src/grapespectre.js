@@ -839,6 +839,97 @@ export default (editor, opts = {}) => {
   });
 
 
+  /* Spectre Chips *********************************************************/
+
+
+  plugin('spectre_chips_tiny', {
+    label: 'Tiny with Image',
+    content: `
+    <div class="chip">
+      <img src="avatar.png" class="avatar avatar-sm" loading="lazy">
+      content
+      <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+    </div>`,
+    category: 'Spectre➡️Chips',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/chips.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_chips_big', {
+    label: 'Big with Image',
+    content: `
+    <div class="chip">
+      <img src="avatar.png" class="avatar" height=32 width=32 loading="lazy">
+      content
+      <a href="#" class="btn btn-clear btn-lg" aria-label="Close" role="button"></a>
+    </div>`,
+    category: 'Spectre➡️Chips',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/chips.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre Empty *********************************************************/
+
+
+  plugin('spectre_empty_tiny', {
+    label: 'Tiny',
+    content: `
+    <div class="empty">
+      <p class="empty-title h5">No updates</p>
+      <p class="empty-subtitle">Nothing to see here...</p>
+    </div>`,
+    category: 'Spectre➡️Empty',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/empty.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_empty_big', {
+    label: 'Big',
+    content: `
+    <div class="empty">
+      <div class="empty-icon badge" data-badge="0">
+        <i class="icon icon-people"></i>
+      </div>
+      <p class="empty-title h5">No updates</p>
+      <p class="empty-subtitle">Nothing to see here...</p>
+      <div class="empty-action">
+        <button class="btn btn-primary">Ok</button>
+        <button class="btn btn-secondary">Nope</button>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Empty',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/empty.html';
+      el.appendChild(a);
+    },
+  });
 
 
   /* Spectre Media *********************************************************/
