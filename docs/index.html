@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/grapesjs-component-code-editor/dist/grapesjs-component-code-editor.min.css" rel="stylesheet" async defer >
     <script src="https://unpkg.com/grapesjs-component-code-editor"></script>
     <link href="https://unpkg.com/grapesjs-indexeddb-ui/dist/grapesjs-indexeddb-ui.min.css" rel="stylesheet" async defer >
+    <script src="https://unpkg.com/grapesjs-plugin-export"></script>
     <script src="https://unpkg.com/grapesjs-indexeddb-ui"></script>
     <script src="grapespectre.min.js"></script>
     <style>
@@ -42,7 +43,7 @@
           id: 'some-id',//gjs-
           type: 'indexeddb',
         },
-        plugins:        ['grapespectre', 'grapesjs-rte-extensions', 'grapesjs-script-editor', 'grapesjs-component-code-editor', 'grapesjs-indexeddb-ui'],
+        plugins: ['grapespectre', 'grapesjs-rte-extensions', 'grapesjs-script-editor', 'grapesjs-component-code-editor', 'grapesjs-indexeddb-ui', 'grapesjs-plugin-export'],
         pluginsOpts: {
           'grapesjs-script-editor': {
             modalTitle: 'JavaScript',

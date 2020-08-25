@@ -22,7 +22,7 @@ export default (editor, options = {}) => {
 
   editor.Panels.addPanel({id: 'views'}).get('buttons').add([{
     attributes: {
-      title: 'Open Code'
+      title: 'Edit Code'
     },
     className: 'fa fa-file-code-o',
     command: 'open-code',
