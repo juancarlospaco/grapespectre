@@ -135,11 +135,11 @@ export default (editor, opts = {}) => {
     content: `
     #
     #if condition:
-      <br>
+    #  discard
     #elif condition:
-      <br>
+    #  discard
     #else:
-      <br>
+    #  discard
     #end if
     #
     `,
@@ -182,11 +182,11 @@ export default (editor, opts = {}) => {
     #
     #case condition
     #of value0:
-      <br>
+    #  discard
     #of value1:
-      <br>
+    #  discard
     #else:
-      <br>
+    #  discard
     #end case
     #
     `,
@@ -207,7 +207,7 @@ export default (editor, opts = {}) => {
     content: `
     #
     #while true:
-      <br>
+    #  discard
     #end while
     #
     `,
@@ -228,13 +228,13 @@ export default (editor, opts = {}) => {
     content: `
     #
     #try:
-      <br>
+    #  discard
     #except IOError as e:
     #  echo e.msg
     #except:
-      <br>
+    #  discard
     #finally:
-      <br>
+    #  discard
     #end try
     #
     `,
@@ -276,27 +276,6 @@ export default (editor, opts = {}) => {
       a.innerHTML = '?';
       a.title = 'Docs';
       a.href = 'https://nim-lang.org/docs/manual.html#statements-and-expressions-var-statement';
-      el.appendChild(a);
-    },
-  });
-
-  plugin('nim_scf_while', {
-    label: 'while infinite loop',
-    content: `
-    #
-    #while true:
-      <br>
-    #end while
-    #
-    `,
-    category: 'Nim lang➡️SCF',
-    media:    '<img src="nim.svg" height=32 width=64 >',
-    render:   ({ el }) => {
-      const a = document.createElement('a');
-      a.target = '_blank';
-      a.innerHTML = '?';
-      a.title = 'Docs';
-      a.href = 'https://nim-lang.org/docs/manual.html#statements-and-expressions-while-statement';
       el.appendChild(a);
     },
   });
