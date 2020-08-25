@@ -19,4 +19,13 @@ export default (editor, options = {}) => {
     editor.Blocks.getCategories().filter(c => ['SVG➡️Patterns', 'Fonts', 'Nim lang➡️SCF', 'Unsplash➡️Images', 'Spectre➡️Icons', 'Spectre➡️Buttons', 'Spectre➡️Experimentals', 'Spectre➡️Utils', 'Spectre➡️Media'].includes(c.get('id'))).forEach(c => c.set('open', 0));
 
   })
+
+  editor.Panels.addPanel({id: 'views'}).get('buttons').add([{
+    attributes: {
+      title: 'Open Code'
+    },
+    className: 'fa fa-file-code-o',
+    command: 'open-code',
+    id: 'open-code'
+  }]);
 };
