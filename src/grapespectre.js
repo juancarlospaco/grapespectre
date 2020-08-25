@@ -932,6 +932,192 @@ export default (editor, opts = {}) => {
   });
 
 
+  /* Spectre Menu *********************************************************/
+
+
+  plugin('spectre_menu', {
+    label: 'Menu Tiny',
+    content: `
+    <ul class="menu">
+      <!-- menu header text -->
+      <li class="divider" data-content="Items">
+      </li>
+      <!-- menu item standard -->
+      <li class="menu-item">
+        <a href="#">
+          <i class="icon icon-link"></i>Foo
+        </a>
+      </li>
+      <!-- menu item with form control -->
+      <li class="menu-item">
+        <label class="form-checkbox">
+          <input type="checkbox">
+          <i class="form-icon"></i>Bar
+        </label>
+      </li>
+      <!-- menu divider -->
+      <li class="divider"></li>
+      <!-- menu item with badge -->
+      <li class="menu-item">
+        <a href="#">
+          <i class="icon icon-link"></i>Baz
+        </a>
+        <div class="menu-badge">
+          <label class="label label-primary">2</label>
+        </div>
+      </li>
+      <li class="menu-item">
+        <a href="#">My profile</a>
+        <div class="menu-badge">
+          <label class="form-checkbox">
+            <input type="checkbox">
+            <i class="form-icon"></i> Public
+          </label>
+        </div>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Menu',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/menu.html#menu';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_menu_button', {
+    label: 'Button-Menu Big',
+    content: `
+    <div class="dropdown">
+      <div class="btn-group">
+        <a href="#" class="btn">
+          dropdown button
+        </a>
+        <a href="#" class="btn dropdown-toggle" tabindex="0">
+          <i class="icon icon-caret"></i>
+        </a>
+        <!-- menu component -->
+        <ul class="menu">
+        <!-- menu header text -->
+        <li class="divider" data-content="Items">
+        </li>
+        <!-- menu item standard -->
+        <li class="menu-item">
+          <a href="#">
+            <i class="icon icon-link"></i>Foo
+          </a>
+        </li>
+        <!-- menu item with form control -->
+        <li class="menu-item">
+          <label class="form-checkbox">
+            <input type="checkbox">
+            <i class="form-icon"></i>Bar
+          </label>
+        </li>
+        <!-- menu divider -->
+        <li class="divider"></li>
+        <!-- menu item with badge -->
+        <li class="menu-item">
+          <a href="#">
+            <i class="icon icon-link"></i>Baz
+          </a>
+          <div class="menu-badge">
+            <label class="label label-primary">2</label>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">My profile</a>
+          <div class="menu-badge">
+            <label class="form-checkbox">
+              <input type="checkbox">
+              <i class="form-icon"></i> Public
+            </label>
+          </div>
+        </li>
+      </ul>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Menu',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/menu.html#menu-dropdown';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre Modals *********************************************************/
+
+
+  plugin('spectre_modals_tiny', {
+    label: 'Tiny',
+    content: `
+    <div class="modal modal-sm active" id="modal-id">
+      <a href="#close" class="modal-overlay" aria-label="Close"></a>
+      <div class="modal-container">
+        <div class="modal-header">
+          <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+          <div class="modal-title h5">Title</div>
+        </div>
+        <div class="modal-body">
+          <div class="content">
+            content
+          </div>
+        </div>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Modals',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/modals.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_modals_big', {
+    label: 'Big',
+    content: `
+    <div class="modal modal-lg active" id="modal-id">
+      <a href="#close" class="modal-overlay" aria-label="Close"></a>
+      <div class="modal-container">
+        <div class="modal-header">
+          <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+          <div class="modal-title h5">Title</div>
+        </div>
+        <div class="modal-body">
+          <div class="content">
+            content
+          </div>
+        </div>
+        <div class="modal-footer">
+          footer
+        </div>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Modals',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/modals.html';
+      el.appendChild(a);
+    },
+  });
+
+
   /* Spectre Media *********************************************************/
 
 
