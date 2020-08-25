@@ -5,6 +5,8 @@
     <title>Spectre CSS HTML Designer</title>
     <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet" async defer >
     <script src="https://unpkg.com/grapesjs"></script>
+    <link href="https://unpkg.com/grapesjs-rte-extensions/dist/grapesjs-rte-extensions.min.css" rel="stylesheet"  async defer >
+    <script src="https://unpkg.com/grapesjs-rte-extensions"></script>
     <script src="grapespectre.min.js"></script>
     <style>
       body, html {height:100%; margin:0}
@@ -31,7 +33,34 @@
         fromElement:    true,
         noticeOnUnload: false,
         storageManager: false,
-        plugins:        ['grapespectre'],
+        plugins:        ['grapespectre', 'grapesjs-rte-extensions'],
+        pluginsOpts: {
+        'grapesjs-rte-extensions': {
+          fonts: {
+            hilite: false,
+          },
+          format: {
+            heading1: true,
+            heading2: true,
+            heading3: true,
+            heading4: true,
+            heading5: true,
+            heading6: true,
+            quote: true,
+            paragraph: true,
+            clearFormatting: true,
+          },
+          subscriptSuperscript: true,
+          indentOutdent: true,
+          list: true,
+          align: true,
+          actions: true,
+          undoredo: true,
+          extra: true,
+          darkColorPicker: true,
+          maxWidth: '666px'
+        }
+      }
       });
     </script>
   </body>
