@@ -5,11 +5,13 @@
     <title>Spectre CSS HTML Designer</title>
     <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet" async defer >
     <script src="https://unpkg.com/grapesjs"></script>
-    <link href="https://unpkg.com/grapesjs-rte-extensions/dist/grapesjs-rte-extensions.min.css" rel="stylesheet"  async defer >
+    <link href="https://unpkg.com/grapesjs-rte-extensions/dist/grapesjs-rte-extensions.min.css" rel="stylesheet" async defer >
     <script src="https://unpkg.com/grapesjs-rte-extensions"></script>
     <script src="https://unpkg.com/grapesjs-script-editor"></script>
-    <link href="https://unpkg.com/grapesjs-component-code-editor/dist/grapesjs-component-code-editor.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/grapesjs-component-code-editor/dist/grapesjs-component-code-editor.min.css" rel="stylesheet" async defer >
     <script src="https://unpkg.com/grapesjs-component-code-editor"></script>
+    <link href="https://unpkg.com/grapesjs-indexeddb-ui/dist/grapesjs-indexeddb-ui.min.css" rel="stylesheet" async defer >
+    <script src="https://unpkg.com/grapesjs-indexeddb-ui"></script>
     <script src="grapespectre.min.js"></script>
     <style>
       body, html {height:100%; margin:0}
@@ -35,8 +37,12 @@
         showOffsets:    true,
         fromElement:    true,
         noticeOnUnload: false,
-        storageManager: false,
-        plugins:        ['grapespectre', 'grapesjs-rte-extensions', 'grapesjs-script-editor', 'grapesjs-component-code-editor'],
+        storageManager: true,
+        storageManager: {
+          id: 'some-id',//gjs-
+          type: 'indexeddb',
+        },
+        plugins:        ['grapespectre', 'grapesjs-rte-extensions', 'grapesjs-script-editor', 'grapesjs-component-code-editor', 'grapesjs-indexeddb-ui'],
         pluginsOpts: {
           'grapesjs-script-editor': {
             modalTitle: 'JavaScript',
