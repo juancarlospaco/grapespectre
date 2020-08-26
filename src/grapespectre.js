@@ -295,28 +295,28 @@ export default (editor, opts = {}) => {
 
   plugin('fonts_ubuntu', {
     label: 'Ubuntu',
-    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">',
+    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"  async defer >',
     category: 'Fonts',
     media:    '<img src="google_fonts.webp" height=32 width=64 loading="lazy">'
   });
 
   plugin('fonts_oxygen', {
     label: 'Oxygen',
-    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap">',
+    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" async defer >',
     category: 'Fonts',
     media:    '<img src="google_fonts.webp" height=32 width=64 loading="lazy">'
   });
 
   plugin('fonts_roboto', {
     label: 'Roboto',
-    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">',
+    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" async defer >',
     category: 'Fonts',
     media:    '<img src="google_fonts.webp" height=32 width=64 loading="lazy">'
   });
 
   plugin('fonts_lato', {
     label: 'Lato',
-    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">',
+    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" async defer >',
     category: 'Fonts',
     media:    '<img src="google_fonts.webp" height=32 width=64 loading="lazy">'
   });
@@ -487,7 +487,7 @@ export default (editor, opts = {}) => {
         <i class="icon icon-arrow-right mr-1"></i> Title
       </summary>
       <div class="accordion-body">
-        content
+        body
       </div>
     </details>`,
     category: 'Spectre➡️Accordions',
@@ -509,14 +509,14 @@ export default (editor, opts = {}) => {
       <input type="radio" id="accordion-1" name="accordion-radio" hidden>
       <label class="accordion-header" for="accordion-1">Title</label>
       <div class="accordion-body">
-        content
+        body
       </div>
     </div>
     <div class="accordion">
       <input type="radio" id="accordion-1" name="accordion-radio" hidden>
       <label class="accordion-header" for="accordion-1">Title</label>
       <div class="accordion-body">
-        content
+        body
       </div>
     </div>`,
     category: 'Spectre➡️Accordions',
@@ -539,7 +539,7 @@ export default (editor, opts = {}) => {
     label: 'Tiny, Presence, Icon, Badge',
     content: `
     <figure class="avatar badge" data-initial="??" data-badge="9" style="background-color:grey"><!-- Replace "??" with user initials; Replace "9" with Badge value, like Rank, etc -->
-      <img src="img.jpg" alt="" title="" height=32 width=32 loading="lazy"><!-- Photo 32x32 px -->
+      <img src="https://source.unsplash.com/99x99/?kitten" alt="" title="" height=32 width=32 loading="lazy"><!-- Photo 32x32 px -->
       <img src="icon.png" class="avatar-icon"><!-- Icon: admin.png, guest.png, etc -->
       <i class="avatar-presence online"></i><!-- Status: online, busy, away, etc -->
     </figure>`,
@@ -559,7 +559,7 @@ export default (editor, opts = {}) => {
     label: 'Big, Presence, Icon, Badge',
     content: `
     <figure class="avatar avatar-xl badge" data-initial="??" data-badge="9" style="background-color:grey"><!-- Replace "??" with User Initials; Replace "9" with Badge value, like Rank, etc -->
-      <img src="img.jpg" alt="" title="" height=32 width=32 loading="lazy"><!-- Photo 64x64 px -->
+      <img src="https://source.unsplash.com/99x99/?kitten" alt="" title="" height=32 width=32 loading="lazy"><!-- Photo 64x64 px -->
       <img src="icon.png" class="avatar-icon"><!-- Icon: admin.png, guest.png, etc -->
       <i class="avatar-presence online"></i><!-- Status: online, busy, away, etc -->
     </figure>`,
@@ -791,14 +791,14 @@ export default (editor, opts = {}) => {
     content: `
     <div class="card">
       <div class="card-image badge" data-badge="666">
-        <img src="img.jpg" class="img-responsive" alt="" title="" loading="lazy">
+        <img src="https://source.unsplash.com/99x99/?kitten" class="img-responsive" alt="" title="" loading="lazy">
       </div>
       <div class="card-header">
         <div class="card-title h5">Title</div>
         <div class="card-subtitle text-gray">Subtitle</div>
       </div>
       <div class="card-body">
-        content
+        body
       </div>
       <div class="card-footer">
         footer
@@ -825,7 +825,7 @@ export default (editor, opts = {}) => {
         <div class="card-subtitle text-gray">Subtitle</div>
       </div>
       <div class="card-body">
-        Content
+        body
       </div>
       <div class="card-footer">
         <div class="btn-group btn-group-block">
@@ -1077,7 +1077,7 @@ export default (editor, opts = {}) => {
         </div>
         <div class="modal-body">
           <div class="content">
-            content
+            body
           </div>
         </div>
       </div>
@@ -1106,7 +1106,7 @@ export default (editor, opts = {}) => {
         </div>
         <div class="modal-body">
           <div class="content">
-            content
+            body
           </div>
         </div>
         <div class="modal-footer">
@@ -1745,7 +1745,7 @@ export default (editor, opts = {}) => {
     label: 'Image AutoResponsive',
     content: `
     <figure class="figure">
-      <img class="img-responsive" src="img.jpg" alt="" title="">
+      <img class="img-responsive" src="https://source.unsplash.com/99x99/?kitten" alt="" title="">
       <figcaption class="figure-caption text-center">Image Description</figcaption>
     </figure>`,
     category: 'Spectre➡️Media',
@@ -1764,7 +1764,7 @@ export default (editor, opts = {}) => {
     label: 'Image AutoCrop',
     content: `
     <figure class="figure">
-      <img class="img-fit-contain" src="img.jpg" alt="" title="">
+      <img class="img-fit-contain" src="https://source.unsplash.com/99x99/?kitten" alt="" title="">
       <figcaption class="figure-caption text-center">Image Description</figcaption>
     </figure>`,
     category: 'Spectre➡️Media',
@@ -1783,7 +1783,7 @@ export default (editor, opts = {}) => {
     label: 'Image AutoResize',
     content: `
     <figure class="figure">
-      <img class="img-fit-cover" src="img.jpg" alt="" title="">
+      <img class="img-fit-cover" src="https://source.unsplash.com/99x99/?kitten" alt="" title="">
       <figcaption class="figure-caption text-center">Image Description</figcaption>
     </figure>`,
     category: 'Spectre➡️Media',
@@ -2759,8 +2759,6 @@ export default (editor, opts = {}) => {
     category: 'Spectre➡️Icons',
     media: '<img src="spectre.svg" height=32 width=32 loading="lazy">'
   });
-
-
 
 
 }
