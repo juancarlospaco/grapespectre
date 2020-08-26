@@ -936,7 +936,7 @@ export default (editor, opts = {}) => {
 
 
   plugin('spectre_menu', {
-    label: 'Menu Tiny',
+    label: 'Tiny Dropdown',
     content: `
     <ul class="menu">
       <!-- menu header text -->
@@ -989,7 +989,7 @@ export default (editor, opts = {}) => {
   });
 
   plugin('spectre_menu_button', {
-    label: 'Button-Menu Big',
+    label: 'Big Dropdown',
     content: `
     <div class="dropdown">
       <div class="btn-group">
@@ -1113,6 +1113,388 @@ export default (editor, opts = {}) => {
       a.innerHTML = '?';
       a.title = 'Docs';
       a.href = 'https://picturepan2.github.io/spectre/components/modals.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre Nav *********************************************************/
+
+
+  plugin('spectre_nav_tiny', {
+    label: 'Tiny',
+    content: `
+    <ul class="nav">
+      <li class="nav-item active">
+        <a href="#">Navigation item</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">Navigation item</a>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Nav',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/nav.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_nav_big', {
+    label: 'Big',
+    content: `
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="#">Navigation item</a>
+      </li>
+      <li class="nav-item active">
+        <a href="#">Navigation item</a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#">Navigation item</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Navigation item</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Navigation item</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Navigation item</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#">Navigation item</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">Navigation item</a>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Nav',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/nav.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre Pagination *********************************************************/
+
+
+  plugin('spectre_pagination_tiny', {
+    label: 'Tiny',
+    content: `
+    <ul class="pagination">
+      <li class="page-item">
+        <a href="#" tabindex="-1"><</a>
+      </li>
+      <li class="page-item active">
+        <a href="#">0</a>
+      </li>
+      <li class="page-item">
+        <a href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a href="#">4</a>
+      </li>
+      <li class="page-item">
+        <a href="#">5</a>
+      </li>
+      <li class="page-item">
+        <a href="#">6</a>
+      </li>
+      <li class="page-item">
+        <a href="#">7</a>
+      </li>
+      <li class="page-item">
+        <a href="#">8</a>
+      </li>
+      <li class="page-item">
+        <a href="#">9</a>
+      </li>
+      <li class="page-item">
+        <a href="#">></a>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Pagination',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/pagination.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_pagination_big', {
+    label: 'Big',
+    content: `
+    <ul class="pagination">
+      <li class="page-item page-prev">
+        <a href="#">
+          <div class="page-item-subtitle">Previous</div>
+          <div class="page-item-title h5">Basic</div>
+        </a>
+      </li>
+      <li class="page-item active">
+        <a href="#">0</a>
+      </li>
+      <li class="page-item">
+        <a href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a href="#">4</a>
+      </li>
+      <li class="page-item">
+        <a href="#">5</a>
+      </li>
+      <li class="page-item">
+        <a href="#">6</a>
+      </li>
+      <li class="page-item">
+        <a href="#">7</a>
+      </li>
+      <li class="page-item">
+        <a href="#">8</a>
+      </li>
+      <li class="page-item">
+        <a href="#">9</a>
+      </li>
+      <li class="page-item page-next">
+        <a href="#">
+          <div class="page-item-subtitle">Next</div>
+          <div class="page-item-title h5">Advanced</div>
+        </a>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Pagination',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/pagination.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre Panels *********************************************************/
+
+
+  plugin('spectre_panels_tiny', {
+    label: 'Tiny AutoScroll Body',
+    content: `
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Title</div>
+      </div>
+      <div class="panel-body">
+        body
+      </div>
+    </div>`,
+    category: 'Spectre➡️Panels',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/panels.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_panels_big', {
+    label: 'Big AutoScroll Body',
+    content: `
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Title</div>
+      </div>
+      <div class="panel-nav">
+        navigation, tabs, breadcrumbs, pagination, etc
+      </div>
+      <div class="panel-body">
+        body
+      </div>
+      <div class="panel-footer">
+        footer
+      </div>
+    </div>`,
+    category: 'Spectre➡️Panels',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/panels.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre PopOvers *********************************************************/
+
+
+  plugin('spectre_popovers_top', {
+    label: 'Top',
+    content: `
+    <div class="popover popover-top">
+      <button class="btn btn-primary">Ok</button>
+      <div class="popover-container">
+        <div class="card">
+          <div class="card-header">
+            Title
+          </div>
+          <div class="card-body">
+            body
+          </div>
+          <div class="card-footer">
+            footer
+          </div>
+        </div>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Popovers',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/popovers.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_popovers_bottom', {
+    label: 'Bottom',
+    content: `
+    <div class="popover popover-bottom">
+      <button class="btn btn-primary">Ok</button>
+      <div class="popover-container">
+        <div class="card">
+          <div class="card-header">
+            Title
+          </div>
+          <div class="card-body">
+            body
+          </div>
+          <div class="card-footer">
+            footer
+          </div>
+        </div>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Popovers',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/popovers.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre Steps ********************************************************/
+
+
+  plugin('spectre_steps_tiny', {
+    label: 'Tiny',
+    content: `
+    <ul class="step">
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 1">1</a>
+      </li>
+      <li class="step-item active">
+        <a href="#" class="tooltip" data-tooltip="Step 2">2</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 3">3</a>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Steps',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/steps.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_steps_big', {
+    label: 'Big',
+    content: `
+    <ul class="step">
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 1">1</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 2">2</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 3">3</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 4">4</a>
+      </li>
+      <li class="step-item active">
+        <a href="#" class="tooltip" data-tooltip="Step 5">5</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 6">6</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 7">7</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 8">8</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 9">9</a>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Steps',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/steps.html';
       el.appendChild(a);
     },
   });
