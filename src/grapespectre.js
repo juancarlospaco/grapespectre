@@ -1642,6 +1642,93 @@ export default (editor, opts = {}) => {
   });
 
 
+  /* Spectre Tabs ********************************************************/
+
+
+  plugin('spectre_tabs_wide', {
+    label: 'Full Width',
+    content: `
+    <ul class="tab tab-block">
+      <li class="tab-item active">
+        <a href="#">Tab 0</a>
+      </li>
+      <li class="tab-item">
+        <a href="#" class="active">Tab 1</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 2</a>
+      </li>
+      <li class="tab-item">
+        <a href="#" class="badge" data-badge="9">Tab 3</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 4</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 5</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 6</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 7</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 8</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 9</a>
+      </li>
+      <li class="tab-item tab-action">
+        <div class="input-group input-inline">
+          <input class="form-input input-sm" type="search">
+          <button class="btn btn-primary btn-sm input-group-btn">Search</button>
+        </div>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Tabs',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/tabs.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  plugin('spectre_tabs_tiny', {
+    label: 'Tiny',
+    content: `
+    <ul class="tab">
+      <li class="tab-item active">
+        <a href="#">Tab 0</a>
+      </li>
+      <li class="tab-item">
+        <a href="#" class="active">Tab 1</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 2</a>
+      </li>
+      <li class="tab-item">
+        <a href="#">Tab 3</a>
+      </li>
+    </ul>`,
+    category: 'Spectre➡️Tabs',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/tabs.html';
+      el.appendChild(a);
+    },
+  });
+
+
   /* Spectre Media *********************************************************/
 
 
