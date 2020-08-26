@@ -257,15 +257,24 @@ export default (editor, opts = {}) => {
     #const
     #  constant_immutable0 = 0
     #  constant_immutable1 = 42
-    #  constant_immutable2 = true
+    #  constant_immutable2 = 666
+    #  constant_immutable3 = true
+    #  constant_immutable4 = 3.14
+    #  constant_immutable5 = @[1, 2, 3]
+    #
     #let
-    #  variable_immutable0 = 666
-    #  variable_immutable1 = 3.14
-    #  variable_immutable2 = @[1, 2, 3]
+    #  variable_immutable0 = 0
+    #  variable_immutable1 = 42
+    #  variable_immutable2 = 666
+    #  variable_immutable3 = true
+    #  variable_immutable4 = 3.14
+    #  variable_immutable5 = @[1, 2, 3]
+    #
     #var
     #  variable_mutable0: int
-    #  variable_mutable1: string
+    #  variable_mutable1: char
     #  variable_mutable2: float
+    #  variable_mutable3: string
     #
     `,
     category: 'Nim lang➡️SCF',
@@ -1665,7 +1674,7 @@ export default (editor, opts = {}) => {
         <a href="#">Tab 4</a>
       </li>
       <li class="tab-item">
-        <a href="#">Tab 5</a>
+        <a href="#" class="badge" data-badge="5">Tab 5</a>
       </li>
       <li class="tab-item">
         <a href="#">Tab 6</a>
