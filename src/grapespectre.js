@@ -2360,6 +2360,312 @@ export default (editor, opts = {}) => {
   });
 
 
+  /* Spectre Templates *********************************************************/
+
+
+  plugin('spectre_templates_basic', {
+    label: 'Simple Page',
+    content: `
+    <div class="container">
+      <div class="columns">
+
+        <!-- LEFT COLUMN -->
+        <div class="column col-3">
+          <h3>News</h3>
+          <p>Quote here</p>
+          <h4>Local</h4>
+          <ul class="nav">
+            <li class="nav-item"><a href="#">News</a></li>
+            <li class="nav-item"><a href="#">Updates</a></li>
+            <li class="nav-item"><a href="#">Products</a></li>
+            <li class="nav-item"><a href="#">More</a></li>
+          </ul>
+          <br>
+          <h4>Site</h4>
+          <ul class="nav">
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#">Privacy</a></li>
+            <li class="nav-item"><a href="#">Terms</a></li>
+          </ul>
+        </div><!-- .column .col-3 -->
+
+        <!-- RIGHT COLUMN -->
+        <div class="column col-9 rel">
+          <h1>Title</h1>
+          <p>Content here</p>
+          <h2>Notes</h2>
+          <ul>
+            <li>
+              <p>More content here.</p>
+            </li>
+            <li>
+              <img src="https://source.unsplash.com/999x666/?kitten" alt="" title="" height=666 width=999 loading="lazy">
+            </li>
+            <li>
+              <img src="https://source.unsplash.com/999x666/?kitten" alt="" title="" height=666 width=999 loading="lazy">
+            </li>
+        </ul>
+
+        </div><!-- .column .col-9 .rel -->
+      </div><!-- .columns -->
+    </div><!-- .container -->`,
+    category: 'Spectre➡️Templates',
+    media: '<img src="spectre.svg" height=32 width=32 loading="lazy">'
+  });
+
+  plugin('spectre_templates_pricing', {
+    label: 'Pricing Bussiness',
+    content: `
+    <!-- top navbar -->
+    <header class="navbar navshadow" style="padding: 1rem;" >
+      <!-- Logo on the left -->
+      <div class="navbar-primary">
+        <a href="#" class="navbar-brand"><span class="text-large">YourSite</span></a>
+      </div>
+      <!-- Supporting links on on the right -->
+      <div class="navbar-section">
+        <a href="#" class="btn btn-link">FAQ</a>
+        <a href="#" class="btn btn-link">Support</a>
+        <a href="#" class="btn btn-link">About</a>
+        <a href="#" class="btn btn-success">Sign Up</a>
+      </div>
+    </header>
+
+    <div class="container centered">
+      <h1 class="text-center" style="margin-top: 5%">Pricing</h1>
+      <p class="text-center text-large explanation">It's usually good to offer 3 options for pricing.</p>
+      <div class="columns" style="margin-left: 15%; margin-right: 15%">
+        <div class="column col-4 text-center">
+          <!-- mt-2 style pushes down left & right columns -->
+          <div class="card mt-2">
+            <div class="card-header bg-gray">
+              <div class="card-title">
+                <h2>Starter</h2>
+              </div><!-- .card-title -->
+            </div><!--- .card-header -->
+            <div class="card-body">
+              <p class="h3">Free <span class="bg-gray h5">$0/month</span></p>
+              <p>1 User</p>
+              <p>1G RAM</p>
+              <p>1G SDD</p>
+              <button class="btn btn-default">Order</button>
+            </div><!-- .card-body -->
+          </div><!-- .card -->
+
+        </div><!-- .column .col-4 -->
+
+        <div class="column col-4 text-center">
+
+          <!-- Without mt-2 style this "pushes up" the center column -->
+          <div class="card navshadow">
+            <div class="card-header bg-primary">
+              <div class="card-title">
+                <h2>Small Business</h2>
+              </div><!-- .card-title -->
+            </div><!--- .card-header -->
+            <div class="card-body">
+              <p class="h3">$59/mo <span class="bg-gray h5">$300/quarter</span></p>
+              <p>5 Users</p>
+              <p>9G RAM</p>
+              <p>1T SSD</p>
+              <p><span class="text-bold text-large text-success"> BEST VALUE </span></p>
+              <button class="btn btn-primary">Order</button>
+            </div><!-- .card-body -->
+          </div><!-- .card -->
+
+        </div><!-- .column .col-4 -->
+
+        <div class="column col-4 text-center">
+
+          <!-- mt-2 style pushes down left & right columns -->
+          <div class="card mt-2">
+            <div class="card-header bg-gray">
+              <div class="card-title">
+                <h2>Enterprise</h2>
+              </div><!-- .card-title -->
+            </div><!--- .card-header -->
+            <div class="card-body">
+              <p class="h3">$199/mo <span class="bg-gray h5">$999/quarter</span></p>
+              <p>9 Users</p>
+              <p>1T RAM</p>
+              <p>9T SSD</p>
+              <button class="btn btn-default">Order</button>
+            </div><!-- .card-body -->
+          </div><!-- .card -->
+        </div>
+
+      </div><!-- .columns -->
+
+    </div><!--  .container -->
+
+    <footer>
+      <div class="columns" style="margin-top: 5%; margin-left: 10%; margin-right: 10%";>
+        <div class="column col-3">
+          <ul>
+            <h5>About</h5>
+            <li><a href="#">Server status</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Privacy poliscy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </div><!-- .column .col-3 -->
+
+        <div class="column col-3">
+          <ul>
+            <h5>Mobile</h5>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Amazon</a></li>
+          </ul>
+        </div><!-- .column .col-3 -->
+
+        <div class="column col-3">
+          <ul>
+            <h5>Help</h5>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Command reference</a></li>
+            <li><a href="#">API reference</a></li>
+          </ul>
+        </div><!-- .column .col-3 -->
+
+        <div class="column col-3">
+          <ul>
+            <h5>Making money</h5>
+            <li><a href="#">Affiliate program</a></li>
+            <li><a href="#">Getting started</a></li>
+            <li><a href="#">Approval process</a></li>
+          </ul>
+        </div><!-- .column .col-3 -->
+
+      </div><!-- columns -->
+
+    </footer><!-- footer-->`,
+    category: 'Spectre➡️Templates',
+    media: '<img src="spectre.svg" height=32 width=32 loading="lazy">'
+  });
+
+  plugin('spectre_templates_basic2', {
+    label: 'Simple Page 2',
+    content: `
+    <div class="columns">
+			<div class="column col-1">
+				</div><!-- .column .col-1 -->
+				  <div class="column col-11">
+            <header class="navbar">
+              <div class="navbar-section hide-sm">
+                <a href="#" class="navbar-brand">Your Page</a>
+              </div>
+              <div class="navbar-section hide-sm">
+                <a  href="#" class="btn btn-link">About</a>
+                <a  href="#" class="btn btn-link">Contact</a>
+                <a  href="#" class="btn btn-link">FAQ</a>
+              </div>
+              <ul class="nav show-sm">
+                <li class="menu-item">
+                  <a  href="#" class="btn btn-link selected">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a  href="#" class="btn btn-link">About</a>
+                </li>
+                <li class="menu-item">
+                  <a  href="#" class="btn btn-link">Contact</a>
+                </li>
+                <li class="menu-item">
+                  <a  href="#" class="btn btn-link">FAQ</a>
+                </li>
+              </ul>
+            </header><!-- .navbar -->
+			  	</div><!-- .column .col-11 -->
+			  </div><!-- .columns -->
+			  <div class="columns">
+				  <div class="column col-1 col-sm-1">
+				  </div><!-- .column col-1 -->
+          <div class="column col-5 col-sm-5">
+            <article>
+              <h1 class="massive big-top-margin">Title
+                <span class="bold-statement">Bold Statement.</span>
+              </h1>
+              <header>
+              </header>
+              <section>
+                <h2>Content here.</h2>
+                <p class="massive">More content.</p>
+                <ul class="massive">
+                  <li>Responsive.</li>
+                  <li>More bullets.</li>
+                  <li>More Spectre.</li>
+                </ul>
+              </section>
+            </article>
+          </div><!-- column col-6 -->
+          <div class="column col-4 col-sm-12">
+            <p  class="column col-4 big-top-margin">&nbsp;</p>
+            <img src="https://source.unsplash.com/666x666/?kitten" alt="" title="" height=666 width=666 loading="lazy">
+            <p  class="massive">You need a
+            <span class="warning">Kitten</span></p>
+				  </div><!-- .column col-4 -->
+			  </div><!-- .columns -->`,
+    category: 'Spectre➡️Templates',
+    media: '<img src="spectre.svg" height=32 width=32 loading="lazy">'
+  });
+
+  plugin('spectre_templates_login', {
+    label: 'Login Page',
+    content: `
+    <div class="columns">
+      <div class="column col-6 col-sm-12 bg-secondary">
+        <img src="https://source.unsplash.com/666x666/?kitten" alt="" title="" height=666 width=666 loading="lazy">
+      </div>
+      <div class="column col-6 col-sm-12" style="height: 100vh;">
+        <div style="display: table; width: 100%; height: 100vh;">
+          <div style="display: table-cell; vertical-align: middle;">
+            <div class="card my-2" style="border: none;">
+              <div class="card-header">
+                <h4 class="card-title">Login</h4>
+                <div class="card-subtitle text-gray">Provide User and Password</div>
+              </div>
+              <div class="card-body">
+                <form class="mb-2" method="POST" action="javascript:;">
+                  <div class="form-group">
+                    <label class="form-label" for="username">Username</label>
+                    <input class="form-input" type="text" name="username" id="username" placeholder="Username" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-input" type="password" name="password" id="password" placeholder="Password" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-checkbox">
+                      <input type="checkbox">
+                      <i class="form-icon"></i> Remember Me
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a class="btn btn-link btn-sm" href="javascript:;">
+                        Forgot Your Password?
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Templates',
+    media: '<img src="spectre.svg" height=32 width=32 loading="lazy">'
+  });
+
+
   /* Spectre Buttons *********************************************************/
 
 
