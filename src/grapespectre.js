@@ -2665,6 +2665,127 @@ export default (editor, opts = {}) => {
     media: '<img src="spectre.svg" height=32 width=32 loading="lazy">'
   });
 
+  plugin('spectre_templates_login2', {
+    label: 'Login Page 2',
+    content: `
+    <div class="columns">
+      <div class="column col-6 col-md-8 col-sm-10 col-xs-12 col-mx-auto">
+        <div class="card my-2">
+          <div class="card-header">
+            <h4 class="card-title">Login</h4>
+            <div class="card-subtitle text-gray">Provide Email and Password</div>
+          </div>
+          <div class="card-body">
+            <form class="mb-2" method="POST" action="javascript:;">
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" name="email" id="email" placeholder="Email" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" name="password" id="password" placeholder="Password" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-checkbox">
+                  <input type="checkbox">
+                  <i class="form-icon"></i> Remember Me
+                </label>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Login</button>
+                <a class="btn btn-link btn-sm" href="javascript:;">
+                    Forgot Your Password?
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Templates',
+    media: '<img src="spectre.svg" height=32 width=32 loading="lazy">'
+  });
+
+  plugin('spectre_templates_infographic', {
+    label: 'Infographic',
+    content: `
+    <div class="columns">
+
+			<!-- hide-lg makes the left column disappear when width is decreased -->
+			<div class="column col-3 hide-lg">
+			</div>
+
+			<div class="column col-6 panel1 text-center">
+				<h1>10 Reasons We All Love That Thing</h1>
+			</div>
+
+			<div class="column col-3 hide-lg">
+			</div>
+		</div><!-- .columns -->
+
+		<!-- 3 columns under the top cap -->
+		<div class="columns">
+			<div class="column col-3 hide-lg">
+			</div>
+
+			<div class="column col-6">
+				<div class="columns">
+					<div class="column col-4 panel2 text-center">
+						<p class="icon-header text-center"><i class="icon icon-3x icon-people"></i></p>
+						<h2>Experts Say</h2>
+						<p>30% Larger since 2012</p>
+						<p>Looks sleeker</p>
+						<p>Sounds sweeter</p>
+						<p>4 out of 5 dentists recommend our thing</p>
+					</div>
+
+
+					<div class="column col-4 panel3 text-center">
+						<p class="icon-header text-center"><i class="icon icon-3x icon-message"></i></p>
+						<h2>Customers Say</h2>
+						<p>They wouldn't dream of switching</p>
+						<p>46% want their mothers to buy it</p>
+						<p>The other 54% are orphans</p>
+						<p>86% wish they'd bought it earlier</p>
+						<p>Many take it on vacations</p>
+					</div>
+
+					<div class="column col-4 panel4 text-center">
+						<p class="icon-header text-center"><i class="icon icon-3x icon-emoji"></i></p>
+						<h2>You'll say</h2>
+						<p>"Where was this thing before?"</p>
+						<p>"Anthony Bourdain would have loved it"</p>
+						<p>"If only this were in an infographic somewhere"</p>
+						<p>"I could use some caffeine right now"</p>
+					</div>
+				</div><!-- .columns -->
+			</div><!-- .column .col-12 -->
+
+			<div class="column col-3 hide-lg">
+			</div>
+
+		</div><!-- .columns -->
+
+		<!-- Bottom footer-like "cap" under the 3 columns -->
+		<div class="columns">
+
+			<div class="column col-3 hide-lg">
+			</div>
+
+			<div class="column col-6 bottom text-center">
+				<p>BROUGHT TO YOU BY <a href="https://spectrebook.com">EXAMPLE.COM</a></p>
+			</div>
+
+			<div class="column col-3 hide-lg">
+			</div>
+		</div><!-- .columns -->`,
+    category: 'Spectre➡️Templates',
+    media: '<img src="spectre.svg" height=32 width=32 loading="lazy">'
+  });
+
 
   /* Spectre Buttons *********************************************************/
 
