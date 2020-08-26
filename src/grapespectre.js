@@ -1500,6 +1500,148 @@ export default (editor, opts = {}) => {
   });
 
 
+  /* Spectre Tiles ********************************************************/
+
+
+  plugin('spectre_tiles_tiny', {
+    label: 'Compact',
+    content: `
+    <div class="tile tile-centered">
+      <div class="tile-icon">
+        <div class="example-tile-icon">
+          <i class="icon icon-file centered"></i>
+        </div>
+      </div>
+      <div class="tile-content">
+        <div class="tile-title">Title</div>
+        <small class="tile-subtitle text-gray">Subtitle</small>
+        Body
+      </div>
+      <div class="tile-action">
+        <button class="btn btn-link">
+          <i class="icon icon-more-vert"></i>
+        </button>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Tiles',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/tiles.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_tiles_big', {
+    label: 'Big',
+    content: `
+    <div class="tile">
+      <div class="tile-icon">
+        <div class="example-tile-icon">
+          <i class="icon icon-file centered"></i>
+        </div>
+      </div>
+      <div class="tile-content">
+        <p class="tile-title">Title</p>
+        <p class="tile-subtitle">Subtitle</p>
+        Body
+      </div>
+      <div class="tile-action">
+        <button class="btn btn-primary">Ok</button>
+      </div>
+    </div>`,
+    category: 'Spectre➡️Tiles',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/tiles.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre Toasts ********************************************************/
+
+
+  plugin('spectre_toasts_success', {
+    label: 'Success',
+    content: `
+    <div class="toast toast-success">
+      <button class="btn btn-clear float-right"></button>
+      Toast Text
+    </div>`,
+    category: 'Spectre➡️Toasts',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/toasts.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_toasts_error', {
+    label: 'Error',
+    content: `
+    <div class="toast toast-error">
+      <button class="btn btn-clear float-right"></button>
+      Toast Text
+    </div>`,
+    category: 'Spectre➡️Toasts',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/toasts.html';
+      el.appendChild(a);
+    },
+  });
+
+
+  /* Spectre Tooltips ********************************************************/
+
+
+  plugin('spectre_tooltips_top', {
+    label: 'Top Multiline',
+    content: '<div class="tooltip tooltip-top" data-tooltip="Line 1 \n Line 2 \n Line 3">tooltip</div>',
+    category: 'Spectre➡️Tooltips',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/tooltips.html';
+      el.appendChild(a);
+    },
+  });
+
+  plugin('spectre_tooltips_bottom', {
+    label: 'Bottom Multiline',
+    content: '<div class="tooltip tooltip-bottom" data-tooltip="Line 1 \n Line 2 \n Line 3">tooltip</div>',
+    category: 'Spectre➡️Tooltips',
+    media:    '<img src="spectre.svg" height=32 width=32 loading="lazy">',
+    render:   ({ el }) => {
+      const a = document.createElement('a');
+      a.target = '_blank';
+      a.innerHTML = '?';
+      a.title = 'Docs';
+      a.href = 'https://picturepan2.github.io/spectre/components/tooltips.html';
+      el.appendChild(a);
+    },
+  });
+
+
   /* Spectre Media *********************************************************/
 
 
