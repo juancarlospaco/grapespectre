@@ -48,7 +48,7 @@ export default (editor, opts = {}) => {
     label: 'Function',
     content: `
     #
-    #proc generateHTML*(argument: string): string =
+    #proc generateHTML*(argument0: int, argument1: float, argument2: bool): string =
     #  discard
     #end proc
     #
@@ -69,7 +69,7 @@ export default (editor, opts = {}) => {
     label: 'Template',
     content: `
     #
-    #template generateHTML*(argument: string): string =
+    #template generateHTML*(argument0: int, argument1: float, argument2: bool): string =
     #  discard
     #end template
     #
@@ -295,7 +295,7 @@ export default (editor, opts = {}) => {
 
   plugin('fonts_ubuntu', {
     label: 'Ubuntu',
-    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"  async defer >',
+    content: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" async defer >',
     category: 'Fonts',
     media:    '<img src="google_fonts.webp" height=32 width=64 loading="lazy">'
   });
@@ -425,7 +425,10 @@ export default (editor, opts = {}) => {
       <section class="navbar-section">
         <div class="input-group input-inline">
           <input class="form-input" type="search" placeholder="Search..." required >
-          <button class="btn btn-primary input-group-btn" onclick="">Search</button>
+          <button class="btn btn-primary input-group-btn" onclick="">
+            <i class="icon icon-search"></i>
+            Search
+          </button>
         </div>
       </section>
     </header>`,
@@ -447,7 +450,7 @@ export default (editor, opts = {}) => {
 
   plugin('spectre_code_multiline', {
     label: 'Multiline',
-    content: '<pre class="code" data-lang="Nim"><code>echo "Hello World"</code></pre>\n',
+    content: '<pre class="code badge" data-lang="Nim" data-badge="Nim" title="Nim"><code>echo "Hello World"</code></pre>\n',
     category: 'Spectre➡️Code',
     media: '<img src="spectre.svg" height=32 width=32 loading="lazy">',
     render: ({ el }) => {
@@ -539,7 +542,7 @@ export default (editor, opts = {}) => {
     label: 'Tiny, Presence, Icon, Badge',
     content: `
     <figure class="avatar badge" data-initial="??" data-badge="9" style="background-color:grey"><!-- Replace "??" with user initials; Replace "9" with Badge value, like Rank, etc -->
-      <img src="https://source.unsplash.com/99x99/?kitten" alt="" title="" height=32 width=32 loading="lazy"><!-- Photo 32x32 px -->
+      <img src="https://source.unsplash.com/99x99/?kitten" alt="" height=32 width=32 loading="lazy"><!-- Photo 32x32 px -->
       <img src="icon.png" class="avatar-icon"><!-- Icon: admin.png, guest.png, etc -->
       <i class="avatar-presence online"></i><!-- Status: online, busy, away, etc -->
     </figure>`,
@@ -623,11 +626,10 @@ export default (editor, opts = {}) => {
     },
   });
 
-
   plugin('spectre_table_full_width', {
     label: 'Striped Hover Full Width',
     content: `
-    <table class="table table-striped table-hover">
+    <table class="table table-striped table-hover tooltip" data-tooltip="Striped Hover Full Width Table">
       <thead>
         <tr>
           <th>title</th>
@@ -674,7 +676,7 @@ export default (editor, opts = {}) => {
 
   plugin('spectre_labels_primary', {
     label: 'Primary',
-    content: '<span class="label label-rounded label-primary">primary</span>\n',
+    content: '<span class="label label-rounded label-primary tooltip" data-tooltip="Label">primary</span>\n',
     category: 'Spectre➡️Labels',
     media: '<img src="spectre.svg" height=32 width=32 loading="lazy">',
     render: ({ el }) => {
@@ -689,7 +691,7 @@ export default (editor, opts = {}) => {
 
   plugin('spectre_labels_secondary', {
     label: 'Secondary',
-    content: '<span class="label label-rounded label-secondary">secondary</span>\n',
+    content: '<span class="label label-rounded label-secondary tooltip" data-tooltip="Label">secondary</span>\n',
     category: 'Spectre➡️Labels',
     media: '<img src="spectre.svg" height=32 width=32 loading="lazy">',
     render: ({ el }) => {
@@ -710,10 +712,10 @@ export default (editor, opts = {}) => {
     label: 'Tiny with Badge',
     content: `
     <ul class="breadcrumb">
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="Home">
         <a href="#">Home</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="0">
         <a href="#">0</a>
       </li>
       <li class="breadcrumb-item badge" data-badge="42">
@@ -736,34 +738,34 @@ export default (editor, opts = {}) => {
     label: 'Big with Badge',
     content: `
     <ul class="breadcrumb">
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="Home">
         <a href="#">Home</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="0">
         <a href="#">0</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="1">
         <a href="#">1</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="2">
         <a href="#">2</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="3">
         <a href="#">3</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="4">
         <a href="#">4</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="5">
         <a href="#">5</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="6">
         <a href="#">6</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="7">
         <a href="#">7</a>
       </li>
-      <li class="breadcrumb-item">
+      <li class="breadcrumb-item tooltip" data-tooltip="8">
         <a href="#">8</a>
       </li>
       <li class="breadcrumb-item badge" data-badge="42">
@@ -855,7 +857,7 @@ export default (editor, opts = {}) => {
     label: 'Tiny with Image',
     content: `
     <div class="chip">
-      <img src="avatar.png" class="avatar avatar-sm" loading="lazy">
+      <img src="https://source.unsplash.com/24x24/?kitten" class="avatar avatar-sm" alt="" title=""  height=24 width=24 loading="lazy">
       content
       <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
     </div>`,
@@ -875,7 +877,7 @@ export default (editor, opts = {}) => {
     label: 'Big with Image',
     content: `
     <div class="chip">
-      <img src="avatar.png" class="avatar" height=32 width=32 loading="lazy">
+      <img src="https://source.unsplash.com/32x32/?kitten" class="avatar" alt="" title="" height=32 width=32 loading="lazy">
       content
       <a href="#" class="btn btn-clear btn-lg" aria-label="Close" role="button"></a>
     </div>`,
@@ -1072,7 +1074,7 @@ export default (editor, opts = {}) => {
       <a href="#close" class="modal-overlay" aria-label="Close"></a>
       <div class="modal-container">
         <div class="modal-header">
-          <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+          <a href="#close" class="btn btn-clear float-right bg-error" aria-label="Close"></a>
           <div class="modal-title h5">Title</div>
         </div>
         <div class="modal-body">
@@ -1097,11 +1099,11 @@ export default (editor, opts = {}) => {
   plugin('spectre_modals_big', {
     label: 'Big',
     content: `
-    <div class="modal modal-lg active" id="modal-id">
+    <div class="modal modal-lg active">
       <a href="#close" class="modal-overlay" aria-label="Close"></a>
       <div class="modal-container">
         <div class="modal-header">
-          <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+          <a href="#close" class="btn btn-clear float-right bg-error" aria-label="Close"></a>
           <div class="modal-title h5">Title</div>
         </div>
         <div class="modal-body">
@@ -1205,7 +1207,7 @@ export default (editor, opts = {}) => {
     content: `
     <ul class="pagination">
       <li class="page-item">
-        <a href="#" tabindex="-1"><</a>
+        <a href="#" tabindex="-1"><i class="icon icon-back"></i></a>
       </li>
       <li class="page-item active">
         <a href="#">0</a>
@@ -1238,7 +1240,7 @@ export default (editor, opts = {}) => {
         <a href="#">9</a>
       </li>
       <li class="page-item">
-        <a href="#">></a>
+        <a href="#"><i class="icon icon-forward"></i></a>
       </li>
     </ul>`,
     category: 'Spectre➡️Pagination',
@@ -1259,6 +1261,7 @@ export default (editor, opts = {}) => {
     <ul class="pagination">
       <li class="page-item page-prev">
         <a href="#">
+          <i class="icon icon-back"></i>
           <div class="page-item-subtitle">Previous</div>
           <div class="page-item-title h5">Basic</div>
         </a>
@@ -1266,35 +1269,36 @@ export default (editor, opts = {}) => {
       <li class="page-item active">
         <a href="#">0</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="1">
         <a href="#">1</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="2">
         <a href="#">2</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="3">
         <a href="#">3</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="4">
         <a href="#">4</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="5">
         <a href="#">5</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="6">
         <a href="#">6</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="7">
         <a href="#">7</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="8">
         <a href="#">8</a>
       </li>
-      <li class="page-item">
+      <li class="page-item tooltip" data-tooltip="9">
         <a href="#">9</a>
       </li>
       <li class="page-item page-next">
         <a href="#">
+          <i class="icon icon-forward"></i>
           <div class="page-item-subtitle">Next</div>
           <div class="page-item-title h5">Advanced</div>
         </a>
@@ -1342,7 +1346,7 @@ export default (editor, opts = {}) => {
   plugin('spectre_panels_big', {
     label: 'Big AutoScroll Body',
     content: `
-    <div class="panel">
+    <div class="panel badge" data-badge="Active">
       <div class="panel-header">
         <div class="panel-title">Title</div>
       </div>
@@ -1581,8 +1585,8 @@ export default (editor, opts = {}) => {
   plugin('spectre_toasts_success', {
     label: 'Success',
     content: `
-    <div class="toast toast-success">
-      <button class="btn btn-clear float-right"></button>
+    <div class="toast toast-success tooltip" data-tooltip="Toast">
+      <button class="btn btn-clear float-right bg-error"></button>
       Toast Text
     </div>`,
     category: 'Spectre➡️Toasts',
@@ -1600,8 +1604,8 @@ export default (editor, opts = {}) => {
   plugin('spectre_toasts_error', {
     label: 'Error',
     content: `
-    <div class="toast toast-error">
-      <button class="btn btn-clear float-right"></button>
+    <div class="toast toast-error tooltip" data-tooltip="Toast">
+      <button class="btn btn-clear float-right bg-error"></button>
       Toast Text
     </div>`,
     category: 'Spectre➡️Toasts',

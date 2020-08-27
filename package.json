@@ -1,6 +1,6 @@
 {
   "name": "grapespectre",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "grapespectre",
   "main": "dist/grapespectre.min.js",
   "repository": {
